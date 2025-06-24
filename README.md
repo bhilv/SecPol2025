@@ -11,10 +11,9 @@ Business Continuity Project - Security Policy
 
 # Getting started with LaTeX
 There are many youtube guides to help you learn the basics of LaTeX and overleaf.
-Quick Start: [Learn Overleaf in 6 Minutes](https://www.youtube.com/watch?v=xcTN4F3l9Ds) *very simple text editing in latex*
 
-More Syntax: [Learn LaTeX Tutorial](https://www.youtube.com/watch?v=mfRmmZ_84Mw) *this covers the basic syntax, overleaf is an easier environment to work with*
-
+Quick Start: [Learn Overleaf in 6 Minutes](https://www.youtube.com/watch?v=xcTN4F3l9Ds)
+More Syntax: [Learn LaTeX Tutorial](https://www.youtube.com/watch?v=mfRmmZ_84Mw)
 The [Overleaf Documentation](https://www.overleaf.com/learn) is a great place to go to learn more and troubleshoot.
 
 
