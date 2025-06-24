@@ -25,8 +25,9 @@ The [Overleaf Documentation](https://www.overleaf.com/learn) is a great place to
 3. Prior to your section being submitted, please append the list of terms you would like me to include in the glossary at the end of your chapter's document. It is important that each entry has a unique key, so make sure to examine the current source before adding a term or acronym.
 
 *please use the following format using this example*
-
+```
 \newglossaryentry{integrity}{
     name={ Integrity },
     description={ Ensures that data is accurate and has not been tampered with. }
 }
+```
