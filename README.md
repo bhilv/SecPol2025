@@ -16,7 +16,7 @@ There are many youtube guides to help you learn the basics of LaTeX and overleaf
 
 2. More Syntax: [Learn LaTeX Tutorial](https://www.youtube.com/watch?v=mfRmmZ_84Mw)
 
-3. The [Overleaf Documentation](https://www.overleaf.com/learn) is a great place to go to learn more and troubleshoot.
+3. The [Overleaf Documentation](https://www.overleaf.com/learn) is a great place to learn more and troubleshoot any issues.
 
 
 # Proper Formatting
