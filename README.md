@@ -3,7 +3,7 @@ Business Continuity Project - Security Policy
 
 # How to Start
 1. Go to [overleaf.com](https://www.overleaf.com) and make an account.
-2. Download the LaTeX Source from this repository (the .zip file), and upload it to overleaf. Begin Writing your assigned section(s).
+2. Download the LaTeX Source from this repository (the release or the .zip file), and upload it to overleaf. Begin Writing your assigned section(s).
 3. The files outside of the "chapters" folder are so that you can compile your edited version correctly, please don't change them as this can lead to compilation issues on my end when all the chapter documents have been submitted.
 4. When completed, please submit the finished & formatted chapter (only the chapter) into the "Completed Chapters Here" directory.
 
