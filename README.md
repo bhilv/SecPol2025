@@ -23,6 +23,7 @@ There are many youtube guides to help you learn the basics of LaTeX and overleaf
 1. Don't add chapters to your assigned chapter, instead use sections/subsections.
 2. Usage of sections or subsections is encouraged!
 3. Prior to your chapter being submitted, please append the list of terms you would like me to include in the glossary at the end of your chapter's document. It is important that each entry has a unique key, so make sure to examine the current source before adding a term or acronym.
+4. All Chapters must include \section 's for Purpose & Scope at minimum.
 
 *Tip*: Please use the following format for your glossary entries
 ```
