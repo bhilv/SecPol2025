@@ -1,0 +1,160 @@
+\chapter{Web Application Security}
+% Set Pagestyle to Fancy
+\pagestyle{fancy}
+
+% Clear all header and footer fields
+\fancyhf{}
+
+% Page number only in the center of the footer
+\fancyfoot[C]{\thepage}
+
+% Remove header line
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%ONLY EDIT BELOW, REMOVE LIPSUM (PLACEHOLDER TEXT) BEFORE EDITING
+\section{Purpose}
+The purpose of Web Application Security is to ensure and ensure that all Web applications that have been developed, currently deployed, or maintained by Honda are secure.  The customer-facing side, internal systems, and third-party developer resources all must be maintained and kept secure while minimizing security vulnerabilities. This policy aims to protect customer and internal data; while also complying with any regulatory standards or laws, and reducing risks pertaining to cyber attacks ( data breaches or disruption of any services). The purpose of this project is to ensure that there are clear roles, responsibilities, and processes for application security and protection of these web assets.
+
+\section{Scope}
+Honda’s Web Application Security Policy is in place to keep the organization's Web Applications safe and protected from cyber threats. This policy applies to employees or members of Honda; and all who use or access Honda's online resources, online (cloud-based) or in person (local). As well as third parties or contractors who maintain or use the company's databases and servers. These third parties must take all necessary precautions when using Honda's resources. Vendors involved in software development, testing, deployment, or monitoring/maintenance must also comply. In addition, this policy applies to all web applications, whether they are for vendors, customers, or internal uses; if developed or used by Honda, they are included.
+
+\section{Roles and Responsibilities}
+To ensure the security of web applications, collaboration is a much-needed resource, stretching across many departments and roles.
+\subsection{Developers}
+\begin{itemize}
+    \item Developers implement secure coding and best practices using industry standards for security such as OWASP (Open Worldwide Application Security Project) which provides many security standards for web applications.
+    \item Participation in secure code reviews, threat modeling sessions, and security training. This allows them to stay up to date with current security practices, while also ensuring that others are competent and following security procedures.
+    \item Observe and fix and security issues identified while being within the SLA (Service Level Agreements) timeframe. The response time and resolution time must be met to ensure security concerns and maintain good relations with customers or users. These SLA Time frames will vary on the type and severity of the problem, but the developers should still fix to the time frame given.
+\end{itemize}
+\subsection{Security Team}
+\begin{itemize}
+    \item Establish and maintain security tooling and controls (scanners, firewalls, Web application firewalls).  Security tooling, updating of software and security software, reviewing any configurations or changes that must be made, and validating and testing whether these tools and softwares are able to combat current and evolving threats.
+    \item Conduct regular audits, penetration tests, and risk assessments. Doing so, ensures the current security of the system and how well responses will be to current and evolving threats.
+    \item Oversee security awareness and training for application teams, ensuring that all members are up to date on any needed information or training. While also ensuring that employees are competent.
+\end{itemize}
+\subsection{Devops/Infrastructure Teams}
+\begin{itemize}
+    \item Integrate security checks in CI/CD (Continuous Integration and Continuous Delivery/Delivery) pipelines (Static Application Security Testing and Dynamic Application Security Testing). CI/CD pipelines is a workflow system, oftentimes having steps such as the Source Stage, Build Stage, Test Stage, Deploy Stage, and Monitor Stage.
+    \item Enforce deployment rules for production access and configurations. Enforcement of these will ensure a high level of security and reliance if these are all followed. 
+    \item Maintain secure system images and infrastructure code or systems. Maintaining and monitoring these ensures up to date and secure systems.
+\end{itemize}
+\subsection{Quality Assurance and Testing Teams}
+\begin{itemize}
+    \item Validate security features and protections as part of test plans. Testing these features ensures that everything is up to date and can protect systems against current cyber threats.
+    \item Use automated testing tools to detect common vulnerabilities (XSS, SQL injections). Doing so regularly will ensure the systems are in place and that they are ready for any current or future evolving threats.
+    \item Ensure that security test cases are included in test cycles.
+\end{itemize}
+\subsection{Third Parties}
+\begin{itemize}
+    \item Make sure they follow Honda's secure development and operational policies at all times. This will ensure that those involved with Honda do not cause any operational or security concerns.
+    \item Undergo periodic security assessments. These third parties will go through security checks every quarter and provide logs of anything and everything they were doing with Honda’s resources and web applications. 
+    \item Notify Honda of any security breaches or suspected vulnerabilities in shared platforms. Third parties will be required to report any security breaches or flaws they find in a timely and professional manner. As well as reporting any vulnerabilities they find.
+\end{itemize}
+\section{Security Requirements}
+\subsection{Secure Development Lifecycle (SDLC)}
+Security must be included and integrated into every stage of the application lifecycle—from its requirements to deployment.
+\begin{itemize}
+    \item All involved teams must follow a documented Secure SDLC process that includes:
+\begin{itemize}
+    \item Planning and security requirement definition 
+    \item Threat modeling and risk assessment
+    \item Secure coding practices/ secure development (input sanitization or access control)
+    \item Security testing prior to each release to ensure secure deployment
+
+\end{itemize}
+\item Honda and its partners are sticking to coding rules that match up with OWASP, MITRE CWE, and CERT guidelines. 
+\item The dev teams need to keep up with training to stay aware of new threats including how to address and fix them.
+\end{itemize}
+\subsection{Authentication and Authorization}
+Access to web applications and their resources must be strictly controlled to ensure only legitimate users perform authorized actions.
+\begin{itemize}
+    \item All users must authenticate using strong credentials and MFA where applicable. Proper security precautions for users are required to ensure that access to systems can’t be exploited through passwords or any user information.
+    \item Single Sign-On (SSO) using OAuth 2.0, OpenID Connect, or SAML must be implemented across corporate systems. This simplifies the process and speeds up the authentication process by making the user only have to be authenticated the first time they login within a single session.
+    \item Sessions must expire after a predefined period of inactivity (default: 15–30 minutes). Session expiration is a crucial security feature that must be implemented at all stages. This expiration is for systems to not be interacted with by unintended users while a system is left inactive.
+    \item Tokens must be securely stored (e.g., HTTPOnly, SameSite, Secure flags). These tokens are important to authentication and are needed to have in place only for users who have these permissions and are authorized.
+    \item Access permissions must be role-based and reviewed quarterly to eliminate excess privilege (least privilege enforcement). Essentially, the roles that are assigned to users need certain permissions, or systems that have permissions, only are granted the minimum level of access necessary to complete their work or current roles.
+\end{itemize}
+\subsection{Input Validation}
+Improper handling of user input is a leading cause of application vulnerabilities. The proper handling of these inputs is a crucial part for security.
+\begin{itemize}
+    \item All input must be validated against a strict schema, or having any data or information is needed to be formatted to a predetermined pattern, format, or structure. . It is preferred to use allow-lists or only accept known safe characters or formats. 
+    \item Sanitize all inputs; remove or alter any data that may be harmful to the system, especially those that interact with databases, file systems, or OS This is to prevent cyber attacks such as SQL injections.
+    \item Client-side validation may improve user experience but cannot replace server-side validation. Both are in place; client-side for user experience, and server-side to ensure that all data is correct and all validations are in true.
+    \item To prevent any injection attacks (HTML injection, cross-site scripting, XML injection, etc) , any output should be contextually encoded before being shown to other environments.  (HTML, JavaScript, JSON, XML)
+
+\end{itemize}
+
+\subsection{Data Protection}
+Data confidentiality and integrity must be ensured through all encryption and access control mechanisms.
+\begin{itemize}
+    \item All data in any type of transit must use Transport Layer Security (TLS 1.2 or higher) to protect against eavesdropping and man-in-the-middle attacks.
+    \item Sensitive data at rest such as credentials or payment data must be encrypted using approved algorithms like AES-256, a 256-bit encryption.
+    \item Passwords must never be stored in plaintext and must be hashed using secure algorithms. This ensures proper secure storage of these passwords that keep them secure even if someone gains access to the list of them.
+    \item Encryption keys must be rotated periodically and stored securely (e.g., using AWS KMS, Azure Key Vault, or HSMs). The time between each rotation is up to the current security regulations ( once a year). Constant use of a key requires it to be changed often to prevent any compromises.
+\end{itemize}
+
+\subsection{Secure APIs}
+APIs are a common attack vector and must be treated with the same security rigor as the front-end.
+\begin{itemize}
+    \item All APIs (Application Programming Interface) must require authentication, ideally through OAuth 2.0 access tokens or mutual TLS. These authentications confirm whether or not whoever interacts have proper permissions.
+    \item Implement proper authorization checks on every endpoint (not just at the gateway). Thus preventing any unauthorized access, ensuring that only proper authorized individuals can make any changes to any part of the system.
+    \item Use rate limiting and API throttling to prevent abuse or denial-of-service attacks. This practice controls the rate of requests to the network or server. This places a hard limit to requests in a window of time, allowing for proper share and fair resource usage as well.
+    \itemPublic APIs must never expose internal implementation details or stack traces. These details or traces can have potential private or sensitive information such as paths of files, source code, information of the systems or databases, user credentials, and access tokens are all examples.
+\end{itemize}
+\section{Security Testing and Monitoring}
+\subsection{Static and Dynamic Testing}
+\begin{itemize}
+    \item \textbf{Static Application Security Testing (SAST)} tools must be integrated into CI/CD  (Continuous Integration and Continuous Delivery/Delivery) workflows to detect code-level issues early.
+    \item \textbf{Dynamic Application Security Testing (DAST)} must be used on deployed environments to uncover issues such as broken authentication or logic flaws.
+    \item All testing must generate reports with severity levels and the steps following anything found during these tests. The severity levels will determine the response, the response time, and the individuals assigned to the problem or incident.
+\end{itemize}
+\subsection{Penetration Testing}
+\begin{itemize}
+    \item Internal or third-party red teams must conduct penetration tests at least annually. These tests must be done on a safe platform to not disrupt business. 
+    \item Penetration testing must simulate real-world threat actors and tactics to evaluate defense mechanisms. The ever changing and evolving cyber-threats require the most up to date training to maintain high levels of security.
+    \item All findings must be categorized by risk level, assigned to owners, and tracked to closure. These risk levels will assign the severity of the problem and how fast it is needed to be fixed to remove any vulnerabilities. The complete tracking and documentation of these findings are crucial to understand anything and everything affected, and to plan for any follow-up changes that may need to be made.
+    \item Testing must be performed before major product launches or infrastructure changes. This testing is done during these times to ensure that all products are as safe as possible with no vulnerabilities before releasing the public or anyone connected to Honda. Testing before infrastructure changes are to upkeep security and will allow for any vulnerabilities to be addressed before major changes. 
+\end{itemize}
+\subsection{Vulnerability Management}
+\begin{itemize}
+    \item All code repositories and dependencies must be scanned regularly using reliable tools. These scans are to ensure regular and constant security measures are up and in place and there are no vulnerabilities that can be exploited. 
+    \item Critical vulnerabilities must be patched or mitigated within 7 business days; medium vulnerabilities within 30 days. These timeframes are set in place to not disrupt or halt business and to have the system as safe as possible at all times.
+    \item Unused components and features must be removed from applications to reduce the attack surface. Unused components and features are best removed to not slow down monitoring and upkeep. If anything is unused, remove promptly with correct procedures and documentation. The less unknown features that can be exploited, the higher the security
+\end{itemize}
+\section{Logging and Monitoring}
+\begin{itemize}
+    \item Applications must generate detailed logs for access attempts, privilege changes, data exports, and error conditions. These logs keep track of all interactions with the applications. 
+    \item  Logs must be protected against unauthorized access and tampering. The logs must only be able to be accessed by authorized personnel.
+    \item Use centralized log aggregation and analysis tools (ELK Stack, Splunk, etc) for real-time alerting. These tools will keep track of all actions, also they will have resources such as rapid detection, real-time analysis, improved security, improved scalability, and have visualization tools that help teams to easily monitor systems in an easy to understand model
+    \itemEstablish baselines and rules for detecting abnormal behavior (login anomalies, privilege escalation). These baselines are in-place to ensure that no behavior may slip past, any and all related abnormal behaviors will be logged for security reasons.
+\end{itemize}
+\section{Incident Response}
+\begin{itemize}
+    \item All applications must be covered under Honda’s Incident Response Plan (IRP), with clear contacts for escalation. These incidents can take place at any time and at any level, security precautions at every point are to guarantee appropriate responses will be available no matter where and when a problem may arise.
+    \item Some of these incident categories may include unauthorized access, data leakage or breaches, denial of service, and compromise of the system to gain a level of control over it.
+    \item All teams must understand their role in incident detection, containment, communication, and recovery. This understanding is in place to skip and fast-track the process of reaction without needing to assign personnel to certain actions, they will already have and know their role.
+    \item Post-incident reviews must include root cause analysis and follow-up actions to prevent recurrence. The documentation of incidents is crucial, with the information fully laid out with a follow-up plan is the most important part. The ability to understand what went wrong and where allows for the planning of how the future will be and any policies or systems that will need to be updated. 
+\end{itemize}
+\section{Third-Party and Open Source Components}
+\begin{itemize}
+    \item Teams must maintain an inventory of all third-party components and their versions (a Software Bill of Materials). Essentially, it is a list of all the inventory of everything such as components, libraries, and dependencies.
+    \item Libraries must be updated regularly, especially those with known CVEs ( Common Vulnerabilities and exposures).This is to ensure and keep track of every vulnerability which aids security personnel to keep track and address specific vulnerabilities.
+    \item Contracts with vendors must include security requirements and right-to-audit clauses. The security procedures are all requirements because they are fundamental and needed to maintain a high level of security. The right-to-audit clauses are needed to ensure that these vendors and third parties are in compliance at all times.
+\end{itemize}
+\section{Policy Enforcement}
+\begin{itemize}
+    \item Compliance with this policy will be measured through audits, reviews, and automated scans. Internal reviews and reviews for third-parties will be done on a regular cycle/basis to ensure total compliance with the policy.
+    \item Non-compliance may result in disciplinary action for employees or termination of contracts for vendors. Depending on the vastness and the level of non-compliance or contract breaking will determine whether or not further legal action would need to be taken against those who do these actions.
+    \itemAny exceptions to the policy must be documented, justified, and approved by the Security Governance Board. This ensures that there is pre-determined information that is available for all to know who has these exceptions and what exceptions they have.
+\end{itemize}\
+\section{Policy Review}
+\begin{itemize}
+    \item The policy will be reviewed annually or after significant changes in:
+    \begin{itemize}
+        \item Technology stack (changes towards microservices, new frameworks)
+        \item Legal requirements (new data protection laws or regulations)
+        \item Business strategy or changes  (entering new markets or getting into deals with new groups that have different compliance needs)
+    \end{itemize}
+    \item Updates will be communicated through internal briefings, documentation, and training sessions. Ensuring that there are high levels of communication so there will be no errors or faults in any level. 
+\end{itemize}
