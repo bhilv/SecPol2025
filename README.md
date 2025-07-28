@@ -20,10 +20,10 @@ There are many youtube guides to help you learn the basics of LaTeX and overleaf
 
 
 # Proper Formatting
-1. Don't add chapters to your assigned chapter, instead use sections/subsections.
-2. Usage of sections or subsections is encouraged!
-3. Prior to your chapter being submitted, please append the list of terms you would like me to include in the glossary at the end of your chapter's document. It is important that each entry has a unique key, so make sure to examine the current source before adding a term or acronym.
-4. All Chapters must include \section 's for Purpose & Scope at minimum.
+1. Don't add chapters to your assigned chapter, instead use sections only (we decided to do no subsections in class).
+2. Usage of tables, graphs, etc. is encouraged!
+3. Prior to your chapter being submitted, please append the list of terms you would like me to include in the glossary as a seperate .txt file (send to me privately). It is important that each entry has a unique key, so make sure to examine the current source before adding a term or acronym.
+4. All Chapters must include \section 's for Purpose & Scope at minimum, with \section's for each different policy topic.
 
 *Tip*: Please use the following format for your glossary entries
 ```
@@ -33,6 +33,8 @@ There are many youtube guides to help you learn the basics of LaTeX and overleaf
 }
 ```
 # Common Mistakes
-If you ever confused on how to format or set up your chapter, please examine the AUP/GRC policies to examine the proper document preamble/formatting options. This will ensure that your document is able to be compiled correctly. Avoid adding packages, \begin{document}, \end{document}, or anything of the sort that affects the entirety of the document. If you have images, or require the addition of packages, inform me via a dm, the official group chat, or school discord channels.
+1. If you ever confused on how to format or set up your chapter, please examine the AUP/GRC policies to examine the proper document preamble/formatting options. This will ensure that your document is able to be compiled correctly.
+2. Avoid adding packages, \begin{document}, \end{document}, or anything of the sort that affects the entirety of the document.
+3. If you have images, or require the addition of packages, inform me via a dm, the official group chat, or school discord channels.
 
 ~ bhilv
