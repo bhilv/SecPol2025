@@ -36,7 +36,7 @@ There are many youtube guides to help you learn the basics of LaTeX and overleaf
 }
 ```
 # Common Mistakes
-1. If you ever confused on how to format or set up your chapter, please examine the AUP/GRC policies to examine the proper document preamble/formatting options. This will ensure that your document is able to be compiled correctly.
+1. If you are ever confused on how to format or set up your chapter, please examine my AUP/GRC policies to examine the proper document preamble/formatting options. This will ensure that your document is able to be compiled correctly.
 2. Avoid adding packages, \begin{document}, \end{document}, or anything of the sort that affects the entirety of the document.
 3. If you have images, or require the addition of packages, inform me via a dm, the official group chat, or school discord channels.
 
