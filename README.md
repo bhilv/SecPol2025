@@ -1,6 +1,9 @@
 # SecPol2025 Repository
 Business Continuity Project - Security Policy
 
+This Repository is a group project for the afternoon Business Continuity Class (CSIA 260) at Ivy Tech Community College's Cyber Academy. It is not intended as representation or estimation of the real Security Policy in place by the Honda plant in Greensburg. Instead, this project is the creation of a general security policy built from the ground up for an automotive plant operating in Indiana. We chose to create a security policy for a real company instead of a fictional one in order to have clearer guidelines and expectations regarding subjects such as laws & regulations, third party policies, and core business functions. The security policy is only one of many potential parts in the process of securing an organization, but it is the point where security begins. There are 11 members in contribution to this project, each responsible for their respective chapters. This project represents a combined effort spanning the length of 8 weeks over the summer of 2025.
+
+
 # How to Start
 1. Go to [overleaf.com](https://www.overleaf.com) and make an account.
 2. Download the LaTeX Source from this repository (the release or the .zip file), and upload it to overleaf. Begin Writing your assigned section(s).
