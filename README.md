@@ -7,7 +7,7 @@ Business Continuity Project - Security Policy
 3. The files outside of the "chapters" folder are so that you can compile your edited version correctly, please don't change them as this can lead to compilation issues on my end when all the chapter documents have been submitted.
 4. When completed, please submit the finished & formatted chapter (only the chapter) into the "Completed Chapters Here" directory.
 
-*Tip*: If you want to see what the formatting currently looks like, download the latest .pdf file from the ~/SecPol2025 directory.
+*Tip*: If you want to see what the formatting currently looks like, download the files from the latest release.
 
 # Getting started with LaTeX
 There are many youtube guides to help you learn the basics of LaTeX and overleaf.
@@ -32,6 +32,7 @@ There are many youtube guides to help you learn the basics of LaTeX and overleaf
     description={ Ensures that data is accurate and has not been tampered with. }
 }
 ```
-
+# Common Mistakes
+If you ever confused on how to format or set up your chapter, please examine the AUP/GRC policies to examine the proper document preamble/formatting options. This will ensure that your document is able to be compiled correctly. Avoid adding packages, \begin{document}, \end{document}, or anything of the sort that affects the entirety of the document. If you have images, or require the addition of packages, inform me via a dm, the official group chat, or school discord channels.
 
 ~ bhilv
