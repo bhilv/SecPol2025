@@ -8,7 +8,7 @@ This Repository is a group project for the Business Continuity Class (CSIA 260) 
 1. Go to [overleaf.com](https://www.overleaf.com) and make an account.
 2. Download the LaTeX Source from this repository (the release or the .zip file), and upload it to overleaf. Begin Writing your assigned section(s).
 3. The files outside of the "chapters" folder are so that you can compile your edited version correctly, please don't change them as this can lead to compilation issues on my end when all the chapter documents have been submitted.
-4. When completed, please submit the finished & formatted chapter (only the chapter) into the "Completed Chapters Here" directory.
+4. When completed, please submit the finished & formatted chapter (only the chapter) into the "Completed Chapters Here" directory. (Do not rename the file to something different from the source, uploads should have the same name as the previous version)
 
 *Tip*: If you want to see what the formatting currently looks like, download the files from the latest release.
 
