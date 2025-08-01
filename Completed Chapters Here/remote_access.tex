@@ -1,0 +1,63 @@
+\chapter{Remote Access}
+% Set Pagestyle to Fancy
+\pagestyle{fancy}
+
+% Clear all header and footer fields
+\fancyhf{}
+
+% Page number only in the center of the footer
+\fancyfoot[C]{\thepage}
+
+% Remove header line
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%ONLY EDIT BELOW, REMOVE LIPSUM (PLACEHOLDER TEXT) BEFORE EDITING
+\section{Purpose}
+The purpose of this policy is to define rules and requirements for connecting to Honda's network from any host. These rules and requirements are designed to minimize the potential exposure to Honda from damages which may result from unauthorized use of Honda's resources. Damages include the loss of sensitive or company confidential data, intellectual property, damage to public image, damage to critical internal systems, and fines or other financial liabilities incurred as a result of those losses.
+
+\section{Scope}
+This policy applies to all Honda employees, contractors, vendors and agents (hereafter referred to as "Users") using Honda-owned, or personal devices (refer to BYOD policy for applicable devices) to connect to Honda's internal network, systems, or data from offsite. This policy applies to remote access connections used to do work on behalf of Honda, including reading or sending email and viewing intranet web resources. This policy covers any and all technical implementations of remote access used to connect to Honda networks.
+
+\section{Device Requirements}
+All devices used for remote access, whether Honda-owned or personal, must meet the security standards defined by Honda.
+\begin{enumerate}
+    \item \textbf{Company-Issued Devices:} Preconfigured by Honda's IT to meet all security requirements
+    \item \textbf{BYOD devices:} Must be fully compliant with all requirements outlined in the Honda BYOD Policy before being granted remote access.
+\end{enumerate}
+    
+\section{Approved Access Method and Authentication}
+\begin{enumerate}
+    \item \textbf{VPN Required:} All remote connections to the Honda internal network must be made through the company-approved Virtual Private Network (VPN) client. Any other method is forbidden unless explicitly granted in writing by the IT Security Department.
+    \item \textbf{No Split-Tunneling:} Split-tunneling is strictly prohibited. All network traffic from the remote device must be routed through Honda's security infrastructure while the VPN is active.
+    \item \textbf{Multi-Factor Authentication (MFA):} All remote access attempts must be authenticated using a Honda-approved MFA solution.
+\end{enumerate}
+
+\section{Secure Connection Environment}
+Users are responsible for ensuring their connection is secure. The use of public, untrusted, or unsecured Wi-Fi networks (e.g., at cafes, airports, hotels) for remote access is strictly prohibited. Connections should only be made from trusted networks, such as a secure home office network.
+
+\section{Data Handling}
+\begin{enumerate}
+    \item \textbf{Prohibition of Local Storage:} Storing Honda's confidential, secret, or restricted data on a local drive of a remote device is strictly prohibited. All work must be saved directly to approved network or cloud locations (e.g., network drives, SharePoint).
+    \item \textbf{Physical Security:} Users are responsible for the physical security of their devices. Devices must not be left unattended in public, and the use of privacy screens is strongly encouraged.
+\end{enumerate}
+
+\section{Session Management}
+\begin{enumerate}
+    \item \textbf{Idle Timeout:} Remote VPN sessions will be automatically disconnected after 30 minutes of inactivity. Users must re-authenticate to resume the session.
+    \item \textbf{Lock Screen:} Users must lock their device screen whenever they step away from it.
+    \item \textbf{Log Off:} Users must fully log off from the VPN and all corporate applications at the end of their workday.
+\end{enumerate}
+\section{Roles and Responsibilities}
+\begin{enumerate}
+    \item \textbf{Users:} Responsible for understanding and adhering to this policy and the BYOD policy if applicable.
+    \item \textbf{IT Department:} Responsible for managing and securing the remote access infrastructure (VPN, MFA).
+    \item \textbf{Information Security Team:} Responsible for defining security standards, monitoring for compliance, and updating this policy.
+    \item \textbf{Management:} Responsible for ensuring their team members are aware of and comply with this policy.
+\end{enumerate}
+
+\section{Exceptions}
+Any exception to the policy must be approved by Remote Access Services and the Infosec Team in advance.
+
+\section{Policy Enforcement and Compliance}
+Failure to comply with this policy may result in the immediate revocation of remote access privileges and further disciplinary action, up to and including termination of employment or contract. Honda reserves the right to audit remote connections to ensure compliance.
