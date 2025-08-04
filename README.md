@@ -1,5 +1,5 @@
 # SecPol2025 Repository
-Business Continuity Project - Security Policy
+Business Continuity Project | Module 08 Final - Security Policy
 
 # Introduction
 
