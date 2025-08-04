@@ -7,7 +7,7 @@ This Repository is a group project for the Business Continuity Class (CSIA 260) 
 
 # Disclaimers
 1. All trademarks used are the property of their respective owners, and their use here does not imply endorsement.
-2. None of the content was sourced from Honda Motor Co. itself. This project was created solely with information gained via independent research from publicly available sources about what a Security Policy might contain.
+2. None of the non-logo content was sourced from Honda Motor Co. itself. This project was created solely with information gained via independent research from publicly available sources about what a Security Policy might contain.
 3. This project is neither endorsed by nor affiliated with Honda Motor Co., Ltd. Honda and (Honda logo), etc. are registered trademarks of Honda Motor Co., Ltd., used here solely for educational (nominative/fair‑use) descriptions.
 4. Should Honda request removal of any content embedded here, it will be promptly removed from the public repo.
 
